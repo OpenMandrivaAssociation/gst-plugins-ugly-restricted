@@ -37,7 +37,7 @@ URL: http://gstreamer.freedesktop.org/
 BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(orc-0.4)
-BuildRequires: gstreamer1.0-plugins-base-devel >= %{version}
+BuildRequires: gstreamer-plugins-base-devel
 BuildRequires: pkgconfig(glu)
 BuildRequires: pkgconfig(id3tag)
 BuildRequires: pkgconfig(mad)
