@@ -181,7 +181,7 @@ This package is in restricted repository as it violates some patents.
 Summary: GStreamer Sid C64 music plugin
 Group: Sound
 Requires: %{bname}-plugins-base
-BuildRequires: sidplay-devel >= 1.36.0
+BuildRequires: sidplay-devel >= 1.36.60-6
 
 %description -n %{bname}-sid
 Plugin for playback of C64 SID format music files
