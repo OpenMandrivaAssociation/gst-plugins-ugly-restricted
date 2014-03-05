@@ -1,3 +1,4 @@
+%define _disable_ld_no_undefined 1
 %define major 1.0
 %define majorminor 1.0
 %define bname gstreamer1.0
