@@ -115,7 +115,7 @@ find %{buildroot} -name '*.la' -delete
 %package -n %{bname}-lame
 Summary: GStreamer plug-in for encoding mp3 songs using lame
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: liblame-devel >= 3.89
 
 %description -n %{bname}-lame
@@ -147,7 +147,7 @@ This package is in restricted repository as it violates some patents.
 %package -n %{bname}-amrnb
 Summary: GStreamer plug-in for AMR-NB support
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: pkgconfig(opencore-amrnb)
 
 %description -n %{bname}-amrnb
@@ -164,7 +164,7 @@ This package is in restricted repository as it violates some patents.
 %package -n %{bname}-amrwbdec
 Summary: GStreamer plug-in for AMR-WB decoding support
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: pkgconfig(opencore-amrwb)
 
 %description -n %{bname}-amrwbdec
@@ -180,7 +180,7 @@ This package is in restricted repository as it violates some patents.
 %package -n %{bname}-sid
 Summary: GStreamer Sid C64 music plugin
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: sidplay-devel => 1.36.0
 
 %description -n %{bname}-sid
@@ -193,7 +193,7 @@ Plugin for playback of C64 SID format music files
 %package -n %{bname}-a52dec
 Summary: GStreamer VOB decoder plugin
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: a52dec-devel >= 0.7.3
 
 %description -n %{bname}-a52dec
@@ -205,7 +205,7 @@ Plugin for decoding of VOB files.
 %package -n %{bname}-mpeg
 Summary: GStreamer plug-ins for MPEG video playback and encoding
 Group: Video
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: pkgconfig(libmpeg2)
 
 %description -n %{bname}-mpeg
@@ -217,7 +217,7 @@ Plug-ins for playing and encoding MPEG video.
 %package -n %{bname}-cdio
 Summary: GStreamer plug-in for audio CD playback
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: pkgconfig(libcdio)
 Conflicts: %{bname}-plugins-good < 0.10.10
 
@@ -230,7 +230,7 @@ Plug-in for audio CD playback.
 %package -n %{bname}-twolame
 Summary: GStreamer plug-in for MP2 encoding support
 Group: Sound
-Requires: %{bname}-plugins >= %{version}-%{release}
+Requires: %{bname}-plugins-base
 BuildRequires: pkgconfig(twolame)
 
 %description -n %{bname}-twolame
