@@ -93,6 +93,8 @@ GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
 
 %find_lang gst-plugins-ugly-%{majorminor}
 
+rm -fr %{buildroot}%{_datadir}/gtk-doc
+
 # Clean out files that should not be part of the rpm.
 # This is the recommended way of dealing with it for RH8
 find %{buildroot} -name '*.la' -delete
