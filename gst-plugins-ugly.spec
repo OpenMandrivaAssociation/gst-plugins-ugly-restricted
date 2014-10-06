@@ -28,7 +28,7 @@
 
 Summary: GStreamer Streaming-media framework plug-ins
 Name: %{name}
-Version: 1.2.3
+Version: 1.4.3
 Release: 1%{?extrarelsuffix}
 License: LGPLv2+
 Group: Sound
