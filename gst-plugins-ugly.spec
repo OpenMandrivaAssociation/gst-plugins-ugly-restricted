@@ -86,7 +86,7 @@ This package is in restricted repository as it violates some patents.
 
 %check
 cd tests/check
-make check
+make check VERBOSE=1
 
 %install
 GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
