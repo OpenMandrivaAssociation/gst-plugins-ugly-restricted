@@ -116,7 +116,8 @@ find %{buildroot} -name '*.la' -delete
 Summary: GStreamer plug-in for encoding mp3 songs using lame
 Group: Sound
 Requires: %{bname}-plugins-base
-BuildRequires: liblame-devel >= 3.89
+BuildRequires: %{bname}-plugins-base
+BuildRequires: lame-devel >= 3.89
 
 %description -n %{bname}-lame
 Plug-in for encoding mp3 with lame under GStreamer.
