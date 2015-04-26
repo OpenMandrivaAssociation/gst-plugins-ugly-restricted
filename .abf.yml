@@ -1,5 +1,4 @@
 removed_sources:
-  gst-plugins-ugly-1.0.10.tar.xz: 08fcaba501f250bbc7c337919081032dacef108e
-  gst-plugins-ugly-1.2.3.tar.xz: a591605169a7d2951b20306cf4fc1e8876ae5b35
+  gst-plugins-ugly-1.4.4.tar.xz: cd8b20ed4495564214c57b2c04befd4db2ca48ad
 sources:
-  gst-plugins-ugly-1.4.3.tar.xz: ee3c92689ffa139a6349ee7fd413ef7e8d1742bd
+  gst-plugins-ugly-1.4.5.tar.xz: 7f076929330cff49cd909fd4f94d3fce52a81e36
