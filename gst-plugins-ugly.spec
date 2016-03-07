@@ -28,7 +28,7 @@
 
 Summary: GStreamer Streaming-media framework plug-ins
 Name: %{name}
-Version: 1.6.2
+Version: 1.6.3
 Release: 1%{?extrarelsuffix}
 License: LGPLv2+
 Group: Sound
@@ -72,9 +72,9 @@ This package is in restricted repository as it violates some patents.
 %setup -q -n gst-plugins-ugly-%{version}
 
 %build
-%configure2_5x --disable-dependency-tracking --disable-static \
+%configure --disable-dependency-tracking --disable-static \
 --with-package-name='OpenMandriva %{name} package' \
---with-package-origin='http://www.openmandriva.org/' \
+--with-package-origin="%{disturl}" \
 %if ! %{build_lame}
 --disable-lame \
 %endif
@@ -86,7 +86,7 @@ This package is in restricted repository as it violates some patents.
 
 %check
 cd tests/check
-make check VERBOSE=1
+make check
 
 %install
 GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 %makeinstall_std
@@ -119,7 +119,7 @@ Summary: GStreamer plug-in for encoding mp3 songs using lame
 Group: Sound
 Requires: %{bname}-plugins-base
 BuildRequires: %{bname}-plugins-base
-BuildRequires:	%{bname}-tools
+BuildRequires: %{bname}-tools
 BuildRequires: lame-devel >= 3.89
 
 %description -n %{bname}-lame
