@@ -2,7 +2,6 @@
 %define major 1.0
 %define majorminor 1.0
 %define bname gstreamer1.0
-%define name %{bname}-plugins-ugly
 
 %define build_experimental 0
 %{?_with_experimental: %{expand: %%global build_experimental 1}}
@@ -27,8 +26,8 @@
 %endif
 
 Summary: GStreamer Streaming-media framework plug-ins
-Name: %{name}
-Version: 1.6.3
+Name: %{bname}-plugins-ugly
+Version: 1.8.1
 Release: 1%{?extrarelsuffix}
 License: LGPLv2+
 Group: Sound
@@ -43,7 +42,8 @@ BuildRequires: pkgconfig(glu)
 BuildRequires: pkgconfig(id3tag)
 BuildRequires: pkgconfig(mad)
 BuildRequires: pkgconfig(dvdread)
-%ifnarch %mips %arm
+BuildRequires: pkgconfig(libmpg123)
+%ifnarch %mips %armx
 BuildRequires: pkgconfig(valgrind)
 %endif
 BuildRequires: pkgconfig(check)
@@ -106,6 +106,7 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/gstreamer-%{majorminor}/libgstdvdread.so
 %{_libdir}/gstreamer-%{majorminor}/libgstdvdsub.so
 %{_libdir}/gstreamer-%{majorminor}/libgstmad.so
+%{_libdir}/gstreamer-%{majorminor}/libgstmpg123.so
 %{_libdir}/gstreamer-%{majorminor}/libgstrmdemux.so
 %if %{build_experimental}
 %{_libdir}/gstreamer-%{majorminor}/libgstsynaesthesia.so
