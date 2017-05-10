@@ -5,7 +5,7 @@
 
 %define build_experimental 0
 %{?_with_experimental: %{expand: %%global build_experimental 1}}
-%define build_lame 0
+%define build_lame 1
 %define build_amrnb 0
 %define build_amrwbdec 0
 %define build_x264 0
@@ -19,7 +19,6 @@
 %define distsuffix plf
 # make EVR of plf build higher than regular to allow update, needed with rpm5 mkrel
 %define extrarelsuffix plf
-%define build_lame 1
 %define build_x264 1
 %define build_amrnb 1
 %define build_amrwbdec 1
@@ -28,7 +27,7 @@
 Summary: GStreamer Streaming-media framework plug-ins
 Name: %{bname}-plugins-ugly
 Version: 1.8.1
-Release: 1%{?extrarelsuffix}
+Release: 2%{?extrarelsuffix}
 License: LGPLv2+
 Group: Sound
 Source0: http://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-%{version}.tar.xz
