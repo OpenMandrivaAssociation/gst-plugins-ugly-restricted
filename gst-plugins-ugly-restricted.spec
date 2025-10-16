@@ -21,9 +21,9 @@
 
 Summary:	GStreamer Streaming-media framework plug-ins
 Name:		%{bname}-plugins-ugly
-Version:	1.26.6
+Version:	1.26.7
 # Make sure that release in restriected is higher than in main
-Release:	101
+Release:	100
 License:	LGPLv2+
 Group:		Sound
 Source0:	https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-%{version}.tar.xz
