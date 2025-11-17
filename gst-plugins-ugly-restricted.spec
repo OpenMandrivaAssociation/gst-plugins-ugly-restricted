@@ -80,6 +80,7 @@ This package is in restricted repository as it violates some patents.
 	-Dgpl=enabled \
 	-Dpackage-name='OpenMandriva %{name} %{version}-%{release}' \
 	-Dpackage-origin='%{disturl}' \
+	-Dtests=disabled \
 	--buildtype=release
 
 %meson_build
