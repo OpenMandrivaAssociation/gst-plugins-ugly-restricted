@@ -21,7 +21,7 @@
 
 Summary:	GStreamer Streaming-media framework plug-ins
 Name:		%{bname}-plugins-ugly
-Version:	1.26.10
+Version:	1.28.1
 # Make sure that release in restriected is higher than in main
 Release:	100
 License:	LGPLv2+
@@ -100,7 +100,7 @@ rm -fr %{buildroot}%{_datadir}/gtk-doc
 find %{buildroot} -name '*.la' -delete
 
 %files -f gst-plugins-ugly-%{majorminor}.lang
-%doc AUTHORS COPYING README* NEWS
+%doc COPYING README*
 %{_libdir}/gstreamer-%{majorminor}/libgstrealmedia.so
 %{_libdir}/gstreamer-%{majorminor}/libgstasf.so
 %{_libdir}/gstreamer-%{majorminor}/libgstdvdlpcmdec.so
