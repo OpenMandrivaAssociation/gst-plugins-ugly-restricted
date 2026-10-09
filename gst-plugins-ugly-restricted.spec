@@ -21,7 +21,7 @@
 
 Summary:	GStreamer Streaming-media framework plug-ins
 Name:		%{bname}-plugins-ugly
-Version:	1.28.6
+Version:	1.28.8
 # Make sure that release in restriected is higher than in main
 Release:	101
 License:	LGPLv2+
